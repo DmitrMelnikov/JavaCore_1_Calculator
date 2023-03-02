@@ -14,14 +14,10 @@ public class Main {
 
         int a = calc.plus.apply(1, 2); // получаем а = 3
         int b = calc.minus.apply(1, 1); // получаем b = 0
-        int c = errorDevide.apply(a, b);
+        int c = calc.devide.apply(a, b);
 
-        if (c == Integer.MAX_VALUE) {
-            System.out.println("Деление на ноль !!!");
-            calc.println.accept(c);
-        } else {
-            calc.println.accept(c);
-        }
+        calc.println.accept(c);
+
 
     }
 }
